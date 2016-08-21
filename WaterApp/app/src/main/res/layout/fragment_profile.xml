@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <com.znsd.water.waterapp.bannerview.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:padding="3dip">
+
+            <com.znsd.water.waterapp.bannerview.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="#ff0000"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dip" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="5.0sp"
+        android:layout_marginRight="5.0sp"
+        android:layout_marginTop="10.0sp"
+        android:layout_weight="3.0"
+        android:background="#ffffff"
+        android:stretchColumns="1">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn"
+                android:gravity="center"
+                android:padding="6.0dip"
+                android:text="表计数据"
+                android:drawableTop="@mipmap/bjsj"
+                android:textColor="#ff000000"
+                 />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn"
+                android:gravity="center"
+                android:text="充值数据"
+                android:drawableTop="@mipmap/zxcz"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/selector_btn"
+                android:gravity="center"
+                android:padding="6.0dip"
+                android:text="购物数据"
+                android:drawableTop="@mipmap/gwsj"
+                android:textColor="#ff000000"
+                 />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

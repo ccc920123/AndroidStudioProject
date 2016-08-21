@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WaterApp</string>
+    <string name="tab_menu_main">精选</string>
+    <string name="tab_menu_business">服务</string>
+    <string name="tab_menu_profile">数据</string>
+    <string name="tab_menu_pay">我的</string>
+
+
+    <string name="cy">常用</string>
+    <string name="zb">周边</string>
+</resources>

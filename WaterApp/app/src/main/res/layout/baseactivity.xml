@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_white" >
+
+
+        <TextView
+            android:id="@+id/title_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:ellipsize="end"/>
+
+
+       
+
+         <TextView
+             android:id="@+id/submit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/title_title"
+             android:layout_alignBottom="@+id/title_title"
+             android:layout_alignParentRight="true"
+             android:ellipsize="end"
+             android:gravity="center"
+             android:singleLine="true"
+             android:layout_marginRight="10dp"
+             android:text="保存"
+             android:textColor="@color/white"
+             android:textStyle="bold" />
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/submit"
+            android:layout_alignBaseline="@+id/title_title"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            />
+    </RelativeLayout> 
+
+    <LinearLayout
+        android:id="@+id/llyContentView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>
