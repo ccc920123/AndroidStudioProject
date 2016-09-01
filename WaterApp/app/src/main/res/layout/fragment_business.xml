@@ -15,7 +15,7 @@
         <com.znsd.water.waterapp.bannerview.ViewFlow
             android:id="@+id/viewflow"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="150dp"
             android:background="@color/white" />
 
         <FrameLayout
@@ -58,6 +58,7 @@
         android:background="@color/bg">
 
         <TextView
+            android:id="@+id/zxcz"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_marginBottom="1.0dip"
@@ -73,6 +74,7 @@
              />
 
         <TextView
+            android:id="@+id/gzsb"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_marginBottom="1.0dip"
@@ -86,6 +88,7 @@
             android:textColor="#ff000000" />
 
         <TextView
+            android:id="@+id/zxkf"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_marginBottom="1.0dip"
