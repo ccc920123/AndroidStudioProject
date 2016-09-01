@@ -13,6 +13,7 @@ import com.znsd.water.waterapp.fragment.Fragment_Business;
 import com.znsd.water.waterapp.fragment.Fragment_Main;
 import com.znsd.water.waterapp.fragment.Fragment_Pay;
 import com.znsd.water.waterapp.fragment.Fragment_Profile;
+import com.znsd.water.waterapp.widget.ChildViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     private RadioButton rb_business;
     private RadioButton rb_profile;
     private RadioButton rb_pay;
-    private ViewPager vpager;
+    private ChildViewPager vpager;
 
 
     // 几个代表页面的常量
@@ -39,7 +40,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+       setContentView(R.layout.activity_main);
         bindViews();
         init();
 
@@ -55,7 +56,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         rb_business = (RadioButton) findViewById(R.id.rb_business);
         rb_profile = (RadioButton) findViewById(R.id.rb_profile);
         rb_pay = (RadioButton) findViewById(R.id.rb_pay);
-        vpager = (ViewPager) findViewById(R.id.vpager);
+        vpager = (ChildViewPager) findViewById(R.id.vpager);
 
     }
 

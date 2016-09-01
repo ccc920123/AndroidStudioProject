@@ -8,7 +8,8 @@
     <RelativeLayout
         android:id="@+id/title_layout"
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
         android:background="@color/bg_white" >
 
 
@@ -19,42 +20,44 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/text_blue"
+            android:drawableLeft="@mipmap/dingwei"
+            android:drawableRight="@mipmap/sjxcon"
             android:textStyle="bold"
             android:singleLine="true"
-            android:text="@string/app_name"
+
+            android:text="成都市武侯区邓小平广场"
             android:ellipsize="end"/>
 
 
        
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal">
          <TextView
-             android:id="@+id/submit"
+             android:id="@+id/service"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-             android:layout_alignBaseline="@+id/title_title"
-             android:layout_alignBottom="@+id/title_title"
-             android:layout_alignParentRight="true"
-             android:ellipsize="end"
-             android:gravity="center"
              android:singleLine="true"
              android:layout_marginRight="10dp"
-             android:text="保存"
-             android:textColor="@color/white"
+             android:textColor="@color/black"
+             android:background="@mipmap/kefu"
              android:textStyle="bold" />
         <TextView
-            android:id="@+id/service"
+            android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/submit"
-            android:layout_alignBaseline="@+id/title_title"
             android:singleLine="true"
             android:textStyle="bold"
-            android:ellipsize="end"
             android:paddingRight="10dp"
-            android:gravity="center"
+            android:textColor="@color/black"
+           android:background="@mipmap/xiaoxi"
             />
+</LinearLayout>
     </RelativeLayout> 
 
     <LinearLayout

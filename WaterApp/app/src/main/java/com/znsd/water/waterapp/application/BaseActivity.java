@@ -18,7 +18,7 @@ public class BaseActivity extends FragmentActivity {
 	private TextView mTitleService;
 	private TextView mTitleText;
 	private LinearLayout llyContentView;
-	private TextView submit;
+	private TextView message;
 
 
 
@@ -44,7 +44,7 @@ public class BaseActivity extends FragmentActivity {
 		mTitleLayout = (RelativeLayout) findViewById(R.id.title_layout);
 		mTitleService = (TextView) findViewById(R.id.service);
 		mTitleText = (TextView) findViewById(R.id.title_title);
-		submit = (TextView) findViewById(R.id.submit);
+		message = (TextView) findViewById(R.id.message);
 		llyContentView = (LinearLayout) findViewById(R.id.llyContentView);
 
 
@@ -61,7 +61,9 @@ public class BaseActivity extends FragmentActivity {
 		}
 	}
 
-
+	public void setContentView(int layoutResID) {
+		View.inflate(this, layoutResID, llyContentView);
+	}
 
 	/**
 	 * 更改标题
@@ -78,17 +80,17 @@ public class BaseActivity extends FragmentActivity {
 	}
 
 	/**
-	 * 得到返回键
+	 * 得到客服按键
 	 */
-	public TextView getTitleBack() {
+	public TextView getTitleService() {
 		return mTitleService;
 	}
 
 	/**
 	 * 得到消息
 	 */
-	public TextView getSubmitTv() {
-		return submit;
+	public TextView getMessage() {
+		return message;
 	}
 
 
