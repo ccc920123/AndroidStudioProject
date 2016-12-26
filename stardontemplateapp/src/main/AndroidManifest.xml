@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.stardon.stardontemplateapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".pictruecameralistview.ListViewActivityLib"/>
+        <activity android:name=".gridviewmainui.GridViewMainActivityLib"/>
+        <activity
+            android:name=".welcome.activity.BaseWelcomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".model.BaseSysSettingActivity"/>
+        <activity
+            android:name=".login.BaseLoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".model.ModelWebViewActivity">
+        </activity>
+        <activity android:name=".model.ModelListViewActivity">
+        </activity>
+        <activity
+            android:name=".update.BaseUpgradeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

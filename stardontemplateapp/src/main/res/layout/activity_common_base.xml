@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".model.base.CommonBaseActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolsbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/appBar_height"
+    android:background="@color/appbar_color">
+    <ImageView
+        android:id="@+id/btnLeft"
+        android:layout_gravity="left"
+        android:textColor="@color/txt_white"
+        style="@style/ActionButton.Overflow"
+        android:layout_marginLeft="3dp"
+        tools:text="按钮"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:layout_gravity="center"
+        android:textColor="@color/txt_white"
+        android:textSize="@dimen/appbar_text"
+        android:textStyle="bold"
+        tools:text="标题"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/btnRight"
+        android:layout_gravity="right"
+        android:textColor="@color/txt_white"
+        style="@style/ActionButton.Overflow"
+        android:layout_marginRight="3dp"
+        tools:text="按钮"
+        android:visibility="gone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

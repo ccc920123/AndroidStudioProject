@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="txt_white">#ffffff</color>
+    <color name="appbar_color">#24ceff</color>
+    <color name="back_bg">#f1f1f1</color>
+    <color name="gray">#b0b0b0</color>
+    <color name="white">#ffffffff</color>
+    <color name="gridtext">#59D7FF</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#1CAF9A</color>
+    <color name="colorPrimaryDark">#1CAF9A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color">#ff434343</color>
+    <color name="text_gray">#8D7A71</color>
+    <color name="cal_line_grey">#cfcdce</color>
+    <color name="dialog_white">#00ffffff</color>
+</resources>

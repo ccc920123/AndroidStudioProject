@@ -1,0 +1,43 @@
+CameraLib 说明文档
+
+CameraLib集成了拍照模块，实现的自定义相机进行拍照，开发者在使用时，只需简单的几步就能得到最终拍摄的
+照片，包括实现试试上传。
+
+使用CameraLib标准库方法如下：
+1.新建activity界面时继承 CameraLibActivity  同时会实现重要方法bindView（），在该方法中处理逻辑，同时
+还会实现getPhoneBack（），getPhoneCancel（），getPhoneSave（），getPhoneDate（）；四个方法该四个方法
+是在点击拍照按钮回调方法，分别表示：得到返回按键，得到重拍按键，得到保存按键，得到照片数据。
+
+具体方法说明：
+
+bindView()；实现逻辑方法，当继承CameraLibActivity后所有的逻辑从该方法开始执行。
+
+getPhoneBack(View view)；【回调方法】得到返回按钮，参数view 类型是Button ，得到该按钮后可以实现设置按钮样式，设置
+按钮的点击事件。
+
+getPhoneCancel(View view)；【回调方法】得到重拍按钮，参数view 类型是Button，该按钮的事件已经实现了重新拍照功能，
+开发者无需再自定义事件；开发这可以设置按钮的样式。
+
+getPhoneSave(View view)；【回调方法】得到保存按钮，参数view 类型是Button，开发者可以设置保存按钮的样式，提交照片
+处理的逻辑，包括上传至服务器。
+
+getPhoneDate(byte[] data) 【回调方法】得到照片的byte型数据data，该方法的data是点击拍照后的照片数据，通过data可以
+直接将照片转换成bitmap，再转换成实际的照片。
+
+getPhoneDate(Bitmap bitmap)【回调方法】得到照片bitmap ，如果开发者设置了照片水印，那么返回的bitmap是一个已经水印的
+照片，用户可以通过该lib库中ImageUtillity工具类来处理照片
+
+getCameraBack（）；Camera界面的返回按钮
+
+setCameraTitleMessage(String cameraTitleMessage)；设置照片预览区域的title标题；参数cameraTitleMessage
+设置的title
+
+setIsVisibleCameraConvertButton(boolean isVisiable)；是否显示摄像头转换按钮；参数isVisiable
+boolean true：显示；false：隐藏，
+
+setDefaultCamera(int CameraID)；设置拍照摄像头的位置，默认为后摄像头 参数CameraID  0:后摄像头
+   1：前摄像头
+
+setWaterMarkTitle(String waterMarkTitle) 设置水印的title多，参数waterMarkTitle 水印的string文字。
+
+

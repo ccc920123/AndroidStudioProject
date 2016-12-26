@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_base_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_welcome"
+    tools:context="com.stardon.stardontemplateapp.welcome.activity.BaseWelcomeActivity">
+
+    <ImageView
+        android:id="@+id/system_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/base_icon"
+        />
+
+    <TextView
+        android:id="@+id/miantitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/system_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="应用名"
+        android:textColor="#FFFFFF"
+        android:textSize="48px"/>
+
+    <TextView
+        android:id="@+id/vicetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/miantitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="副标题"
+        android:textColor="#FFFFFF"
+        android:textSize="32px"/>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="Copyright © 2016 stardon"
+        android:textColor="#C3C3C3"/>
+
+
+</RelativeLayout>
